@@ -1,0 +1,67 @@
+h1 {
+	font-size: 45px;
+	color: #757575;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 65px;
+}
+
+.table-container {
+	box-sizing: border-box;
+	height: 425px;
+	width: 300px;
+	border: 1px solid rgba(0, 0, 0, .15);
+	padding-left: 50px;
+	padding-right: 50px;
+	color: #757575;
+	font-weight: 300;
+}
+
+.table-all {
+	display: grid;
+	margin-bottom: 75px;
+	justify-content: center;
+	align-content: center;
+	gap: 50px;
+	grid-auto-flow: column;
+}
+
+h2 {
+	color: #ff6600;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.second {
+	float: right;
+	position: relative;
+}
+
+.first {
+	float: left;
+	position: relative;
+}
+
+@media screen and (max-width: 1100px) {
+	.table-all {
+		display: grid;
+		justify-content: center;
+		align-items: center;
+		gap: 50px;
+		grid-auto-flow: row;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.table-container {
+		box-sizing: border-box;
+		height: 360px;
+		width: 275px;
+		padding-left: 50px;
+		padding-right: 50px;
+		font-size: 14px;
+		color: #757575;
+		font-weight: 500;
+	}
+}

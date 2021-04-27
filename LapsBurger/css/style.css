@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@200&display=swap');
+body {
+	font-family: 'Antonio';
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+nav {
+	height: 70px;
+	width: 100%;
+}
+
+nav h1 {
+	color: black;
+	font-size: 35px;
+	margin-left: 200px;
+	float: left;
+	line-height: 30px;
+	position: relative;
+}
+
+nav ul {
+	display: flex;
+	float: right;
+}
+
+nav ul li {
+	list-style: none;
+}
+
+nav ul li a {
+	color: black;
+	text-decoration: none;
+	font-size: 22px;
+	font-weight: 500;
+	line-height: 80px;
+	margin-right: 200px;
+	margin-left: -80px;
+	padding-bottom: 5px;
+}
+
+nav ul li a:hover {
+	border-bottom: 3px solid black;
+	transition: 0.5s all ease;
+}
+
+@media screen and (max-width: 1200px) {
+	nav ul li a {
+		margin-right: 150px;
+		margin-left: -125px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	nav h1 {
+		float: none;
+		text-align: center;
+		margin: 0;
+		margin-top: 20px;
+	}
+	nav ul {
+		float: none;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		padding: 0;
+	}
+	nav ul li a {
+		padding: 0;
+		margin: 0;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
+.btn-a {
+	position: fixed;
+	bottom: 25px;
+	left: 45px;
+	border: 1px solid rgb(255, 0, 0);
+	height: 40px;
+	width: 40px;
+	line-height: 40px !important;
+	border-radius: 50px;
+	padding: 0;
+	color: rgb(255, 0, 0);
+	font-size: 16px;
+	text-align: center;
+}
+
+.btn-a:hover {
+	border-color: black;
+	color: black;
+	transition: 0.3s;
+}
+.hero-container {
+	background-image: url(../img/hero.jpg);
+	background-size: cover;
+	background-position: top center;
+	position: relative;
+	z-index: 1;
+	height: 600px;
+	margin-top: 40px;
+	text-align: center;
+}
+
+.hero-container::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: .6;
+	z-index: -1;
+}
+
+.hero-text {
+	padding-top: 150px;
+	color: #f2f2f2;
+}
+
+.hero-text h1 {
+	font-size: 40px;
+	margin-bottom: 5px;
+}
+
+.hero-text p {
+	font-size: 30px;
+}
+
+.hero-text hr {
+	outline: none;
+	height: 0px;
+	background-color: white;
+	width: 350px;
+	margin-bottom: 25px;
+	margin-top: -15px;
+}
+
+.hero-text a {
+	padding: 13px 40px;
+	text-transform: uppercase;
+	border: 1px solid black;
+	border-radius: 2px;
+	outline: none;
+	color: black;
+	text-decoration: none;
+	background-color: white;
+	font-size: 18px;
+}
+
+.hero-text a:hover {
+	background-color: transparent;
+	border: 1px solid white;
+	color: white;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+	.hero-text hr {
+		width: 200px;
+	}
+}
+
+.product-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.product-box-reverse {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.product-text-reverse {
+	background-color: black;
+	color: white;
+	width: 400px;
+	height: 240px;
+	padding: 30px;
+	margin: 10px;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	box-shadow: 0px 2px 15px 0px black;
+	text-align: left;
+}
+
+.product-text {
+	background-color: black;
+	color: white;
+	width: 400px;
+	height: 240px;
+	margin: 10px;
+	padding: 30px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	box-shadow: 0px 2px 15px 0px black;
+}
+
+.product-text a {
+	background: white;
+	text-decoration: none;
+	color: black;
+	padding: 10px 20px;
+	text-align: center;
+}
+
+.product-text a:hover {
+	font-weight: 600;
+}
+
+.product-text-reverse a:hover {
+	font-weight: 600;
+}
+
+.product-text p {
+	margin-bottom: 50px;
+}
+
+.product-text-reverse a {
+	background: white;
+	text-decoration: none;
+	color: black;
+	padding: 10px 20px;
+	text-align: center;
+}
+
+.product-text-reverse p {
+	margin-bottom: 50px;
+}
+
+.product-img-reverse img {
+	width: 500px;
+	height: 300px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	box-shadow: 0px 2px 15px 0px black;
+}
+
+.product-img img {
+	width: 500px;
+	height: 300px;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	box-shadow: 0px 2px 15px 0px black;
+}
+
+@media screen and (max-width: 1000px) {
+	.product-box {
+		flex-direction: column;
+		align-items: center;
+	}
+	.product-box-reverse {
+		flex-direction: column;
+		align-items: center;
+	}
+	.product-img-reverse img {
+		width: 500px;
+		height: 300px;
+		border-top-left-radius: 15px;
+		border-bottom-left-radius: 15px;
+		box-shadow: 0px 2px 15px 0px black;
+	}
+	.product-text {
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+		border-bottom-left-radius: 0;
+	}
+	.product-img img {
+		width: 460px;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 15px;
+		border-bottom-left-radius: 15px;
+	}
+	.product-text-reverse {
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+		border-bottom-right-radius: 0;
+	}
+	.product-img-reverse img {
+		width: 460px;
+		border-top-left-radius: 0;
+		border-bottom-right-radius: 15px;
+		border-bottom-left-radius: 15px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.product-text {
+		width: 290px;
+		margin: 0;
+	}
+	.product-img img {
+		width: 350px;
+		height: 250px;
+	}
+	.product-text-reverse {
+		width: 290px;
+		margin: 0;
+	}
+	.product-img-reverse img {
+		width: 350px;
+		height: 250px;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.product-text {
+		width: 190px;
+		margin: 0;
+	}
+	.product-img img {
+		width: 250px;
+		height: 180px;
+	}
+	.product-text-reverse {
+		width: 190px;
+		margin: 0;
+	}
+	.product-img-reverse img {
+		width: 250px;
+		height: 180px;
+	}
+}
+
+#contact {
+	background: black;
+	height: 500px;
+	margin-top: 80px;
+	display: flex;
+}
+
+form {
+	width: 100%;
+}
+
+form h1 {
+	color: white;
+	margin: 25px;
+	margin-bottom: -20px;
+	margin-top: 18px;
+}
+
+form hr {
+	background-color: white;
+	width: 5%;
+	margin-left: 25px;
+	margin-top: 35px;
+	margin-bottom: -37px;
+}
+
+input[type=text] {
+	width: 19.7%;
+	padding: 10px;
+	margin: 50px 5px 15px 25px;
+	border: none;
+	background: #f1f1f1;
+	outline: none;
+	font-family: 'Antonio';
+}
+
+input[type=email] {
+	width: 43.2%;
+	padding: 10px;
+	margin: 10px 15px 15px 25px;
+	border: none;
+	background: #f1f1f1;
+	outline: none;
+	font-family: 'Antonio';
+}
+
+textarea {
+	width: 43.2%;
+	padding: 10px;
+	margin: 10px 15px 15px 25px;
+	border: none;
+	background: #f1f1f1;
+	outline: none;
+	font-family: 'Antonio';
+}
+
+#contact button {
+	width: 44.5%;
+	padding: 10px;
+	margin: 10px 15px 15px 25px;
+	border: none;
+	background: #f1f1f1;
+	outline: none;
+	font-family: 'Antonio';
+}
+
+#contact button:hover {
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.contact-info {
+	color: white;
+	width: 50%;
+	margin-left: -700px;
+}
+
+.contact-info hr {
+	background: white;
+	width: 10%;
+	margin-left: 0.5px;
+}
+
+.contact-text h3 {
+	margin-top: 31.5px;
+	margin-bottom: -10px;
+}
+
+footer {
+	text-align: center;
+	background: black;
+	color: white;
+	height: px;
+	margin-top: -80px;
+}
+
+@media screen and (max-width: 1200px) {
+	#contact {
+		background: black;
+		height: 1000px;
+		margin-top: 80px;
+		display: flex;
+		flex-direction: column;
+	}
+	form {
+		width: 100%;
+		align-items: center;
+		text-align: center;
+	}
+	form h1 {
+		color: white;
+		margin: 25px;
+		margin-bottom: -20px;
+		margin-top: 18px;
+	}
+	form hr {
+		background-color: white;
+		width: 15%;
+		margin-bottom: 10px;
+		align-items: center;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	input[type=text] {
+		width: 90%;
+		margin: 0;
+		margin-top: 10px;
+	}
+	input[type=email] {
+		width: 90%;
+		margin: 0;
+		margin-top: 10px;
+	}
+	textarea {
+		width: 90%;
+		margin: 0;
+		margin-top: 10px;
+	}
+	.contact-info {
+		color: white;
+		width: 100%;
+		margin-left: 0;
+		margin-top: 50px;
+		text-align: center;
+	}
+	.contact-info hr {
+		background: white;
+		width: 15%;
+		align-items: center;
+		display: inline-block;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.contact-info p {
+		font-size: 15px;
+	}
+}

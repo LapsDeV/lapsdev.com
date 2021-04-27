@@ -1,0 +1,92 @@
+body,
+html,
+header,
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+header,
+body,
+html {
+	width: 100%;
+	height: 100%;
+}
+
+header {
+	background: url(../img/home.jpg) no-repeat center center;
+	background-size: cover;
+	color: white;
+}
+
+.wrapper {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.content {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	text-shadow: 1px 1px 10px black;
+}
+
+h1 {
+	font-size: 65px;
+}
+
+.subtile {
+	font-size: 23px;
+}
+
+.btn {
+    position: absolute;
+    bottom: 25px;
+    border: 2px solid white;
+    border-radius: 60px;
+	line-height: 60px !important;
+    width: 60px;
+	padding: 0;
+    height: 60px;
+    animation: bounce 1.2s ease infinite;
+}
+i {
+    padding-top: 20px;
+    font-size: 20px;
+	color: white;
+}
+.btn:hover {
+    border-color: #ff6600;
+    color: #ff6600;
+    transition: 0.3s;
+}
+@keyframes bounce{
+    from {bottom: 25px;}
+    50%  {bottom: 50px;}
+    to   {bottom: 25px;}
+}
+.btn-a {
+	position: fixed;
+	bottom: 25px;
+	left: 25px;
+	border: 1px solid #ff6600;
+	height: 40px;
+	width: 40px;
+	line-height: 40px !important;
+	border-radius: 50px;
+	padding: 0;
+	color: #ff6600;
+	font-size: 16px;
+	text-align: center;
+}
+
+.btn-a:hover {
+	border-color: black;
+	color: black;
+	transition: 0.3s;
+}

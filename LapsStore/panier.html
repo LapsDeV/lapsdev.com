@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/styles.css">
+      <script src="https://kit.fontawesome.com/e69ab573f5.js" crossorigin="anonymous"></script>
+      <script src="./js/scroll.js"></script>
+      <script src="./js/app.js"></script>
+      <title>LapsStore | Panier</title>
+   </head>
+   <body>
+      <header id='home'>
+         <nav id="nav">
+            <input id="nav-toggle" type="checkbox">
+            <img src="./img/logo.png" alt="" class="logo">
+            <ul>
+               <li><a href="home">Accueil</a></li>
+               <li><a href="home#vente">Nos meilleures ventes</a></li>
+               <li><a href="home#all-plants">Nos plantes</a></li>
+               <li><a href="home#contact">Contact</a></li>
+               <li><a href="login">Se connecter</a></li>
+            </ul>
+            <label for="nav-toggle" class="icon-burger">
+            <i class="fas fa-bars btn"></i>
+            </label>
+            <div class="right">
+               <li><a class="active" href="#panier"><i class="fas fa-shopping-cart"></i>Panier</a></li>
+            </div>
+         </nav>
+      </header>
+      <section class="small-container cart-page">
+         <div class="cart">
+         <table>
+         <tr>
+            <th>Produit</th>
+            <th>Quantité</th>
+            <th>Total</th>
+         </tr>
+         <tr>
+            <td>
+               <div class="cart-info">
+               <img src="./img/1.jpg" alt="">
+               <div>
+                  <p>Plante</p>
+                  <small>Prix : 24.99€</small>
+                  <a href="">Supprimer</a>
+               </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>25 €</td>
+         </tr>
+         <tr>
+            <td>
+               <div class="cart-info">
+               <img src="./img/2.jpg" alt="">
+               <div>
+                  <p>Plante</p>
+                  <small>Prix : 24.99€</small>
+                  <a href="">Supprimer</a>
+               </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>24.99€</td>
+         </tr>
+         <tr>
+            <td>
+               <div class="cart-info">
+               <img src="./img/6.jpg" alt="">
+               <div>
+                  <p>Plante</p>
+                  <small>Prix : 24.99€</small>
+                  <a href="">Supprimer</a>
+               </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>24.99€</td>
+         </tr>
+         <div class="total-price">
+            <table>
+               <tr>
+                  <td>Total</td>
+                  <td>74.97  €</td>
+               </tr>
+            </table>
+         </div>
+      </section>
+   </body>
+</html>
